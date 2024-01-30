@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 
 namespace Di_Station.Service.Concrate
 {
-    public class MealSERVICE:BaseDietService<Meal>,IMealSERVICE
+    public class YemekCesidiUrunSERVICE : BaseDietService<YemekCesidiUrun>, IYemekCesidiUrunSERVICE
     {
-
     }
 }
