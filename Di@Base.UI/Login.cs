@@ -16,5 +16,12 @@ namespace Di_Base.UI
         {
             InitializeComponent();
         }
+
+        private void button_AnketeGit_Click(object sender, EventArgs e)
+        {
+            UygulamaAcilis uygulamaAcilis = new UygulamaAcilis();   
+
+            uygulamaAcilis.ShowDialog(this);
+        }
     }
 }

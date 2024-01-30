@@ -31,6 +31,14 @@ namespace Di_Station.REPO.Mapping
                 .HasColumnType("decimal(18,2)");
 
 
+            builder.Property(x => x.Status)
+               .HasColumnName("Status")
+               .IsRequired()  //boş geçilemez 
+               .HasMaxLength(20)
+               .HasColumnType("nvarchar");
+
+
+
 
         }
     }

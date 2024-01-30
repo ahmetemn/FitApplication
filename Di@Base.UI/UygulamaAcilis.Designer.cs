@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UygulamaAcilis));
             label1 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
+            dateTimePicker_DogumTarihi = new DateTimePicker();
+            radioButton_Erkek = new RadioButton();
+            radioButton_Kadın = new RadioButton();
             label2 = new Label();
             bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
-            button1 = new Button();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            button_DevamEt = new Button();
+            textBox_Meslek = new TextBox();
+            textBox_Sehir = new TextBox();
             label10 = new Label();
             label11 = new Label();
             label9 = new Label();
@@ -45,13 +45,13 @@
             label7 = new Label();
             label6 = new Label();
             label5 = new Label();
-            numericUpDown2 = new NumericUpDown();
+            numericUpDown_Boy = new NumericUpDown();
             label4 = new Label();
-            numericUpDown1 = new NumericUpDown();
+            numericUpDown_Kilo = new NumericUpDown();
             label3 = new Label();
             bunifuCards1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown_Boy).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown_Kilo).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -64,36 +64,36 @@
             label1.TabIndex = 1;
             label1.Text = "Doğum Tarihi";
             // 
-            // dateTimePicker1
+            // dateTimePicker_DogumTarihi
             // 
-            dateTimePicker1.Location = new Point(13, 89);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(273, 23);
-            dateTimePicker1.TabIndex = 2;
+            dateTimePicker_DogumTarihi.Location = new Point(13, 89);
+            dateTimePicker_DogumTarihi.Name = "dateTimePicker_DogumTarihi";
+            dateTimePicker_DogumTarihi.Size = new Size(273, 23);
+            dateTimePicker_DogumTarihi.TabIndex = 2;
             // 
-            // radioButton1
+            // radioButton_Erkek
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.BackColor = Color.Transparent;
-            radioButton1.Location = new Point(13, 38);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(53, 19);
-            radioButton1.TabIndex = 3;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Erkek";
-            radioButton1.UseVisualStyleBackColor = false;
+            radioButton_Erkek.AutoSize = true;
+            radioButton_Erkek.BackColor = Color.Transparent;
+            radioButton_Erkek.Location = new Point(13, 38);
+            radioButton_Erkek.Name = "radioButton_Erkek";
+            radioButton_Erkek.Size = new Size(53, 19);
+            radioButton_Erkek.TabIndex = 3;
+            radioButton_Erkek.TabStop = true;
+            radioButton_Erkek.Text = "Erkek";
+            radioButton_Erkek.UseVisualStyleBackColor = false;
             // 
-            // radioButton2
+            // radioButton_Kadın
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.BackColor = Color.Transparent;
-            radioButton2.Location = new Point(82, 38);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(55, 19);
-            radioButton2.TabIndex = 4;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Kadın";
-            radioButton2.UseVisualStyleBackColor = false;
+            radioButton_Kadın.AutoSize = true;
+            radioButton_Kadın.BackColor = Color.Transparent;
+            radioButton_Kadın.Location = new Point(82, 38);
+            radioButton_Kadın.Name = "radioButton_Kadın";
+            radioButton_Kadın.Size = new Size(55, 19);
+            radioButton_Kadın.TabIndex = 4;
+            radioButton_Kadın.TabStop = true;
+            radioButton_Kadın.Text = "Kadın";
+            radioButton_Kadın.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -112,9 +112,9 @@
             bunifuCards1.BottomSahddow = true;
             bunifuCards1.BottomShadow = true;
             bunifuCards1.color = Color.Tomato;
-            bunifuCards1.Controls.Add(button1);
-            bunifuCards1.Controls.Add(textBox2);
-            bunifuCards1.Controls.Add(textBox1);
+            bunifuCards1.Controls.Add(button_DevamEt);
+            bunifuCards1.Controls.Add(textBox_Meslek);
+            bunifuCards1.Controls.Add(textBox_Sehir);
             bunifuCards1.Controls.Add(label10);
             bunifuCards1.Controls.Add(label11);
             bunifuCards1.Controls.Add(label9);
@@ -122,15 +122,15 @@
             bunifuCards1.Controls.Add(label7);
             bunifuCards1.Controls.Add(label6);
             bunifuCards1.Controls.Add(label5);
-            bunifuCards1.Controls.Add(numericUpDown2);
+            bunifuCards1.Controls.Add(numericUpDown_Boy);
             bunifuCards1.Controls.Add(label4);
-            bunifuCards1.Controls.Add(numericUpDown1);
+            bunifuCards1.Controls.Add(numericUpDown_Kilo);
             bunifuCards1.Controls.Add(label3);
-            bunifuCards1.Controls.Add(dateTimePicker1);
-            bunifuCards1.Controls.Add(radioButton2);
+            bunifuCards1.Controls.Add(dateTimePicker_DogumTarihi);
+            bunifuCards1.Controls.Add(radioButton_Kadın);
             bunifuCards1.Controls.Add(label1);
             bunifuCards1.Controls.Add(label2);
-            bunifuCards1.Controls.Add(radioButton1);
+            bunifuCards1.Controls.Add(radioButton_Erkek);
             bunifuCards1.IndicatorColor = Color.Tomato;
             bunifuCards1.LeftSahddow = false;
             bunifuCards1.LeftShadow = false;
@@ -142,31 +142,31 @@
             bunifuCards1.Size = new Size(311, 397);
             bunifuCards1.TabIndex = 6;
             // 
-            // button1
+            // button_DevamEt
             // 
-            button1.BackColor = Color.FromArgb(0, 0, 192);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(11, 355);
-            button1.Name = "button1";
-            button1.Size = new Size(276, 27);
-            button1.TabIndex = 19;
-            button1.Text = "KAYDOL";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            button_DevamEt.BackColor = Color.FromArgb(0, 0, 192);
+            button_DevamEt.ForeColor = Color.White;
+            button_DevamEt.Location = new Point(11, 355);
+            button_DevamEt.Name = "button_DevamEt";
+            button_DevamEt.Size = new Size(276, 27);
+            button_DevamEt.TabIndex = 19;
+            button_DevamEt.Text = "Devam Et";
+            button_DevamEt.UseVisualStyleBackColor = false;
+            button_DevamEt.Click += button_DevamEt_Click;
             // 
-            // textBox2
+            // textBox_Meslek
             // 
-            textBox2.Location = new Point(13, 316);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(273, 23);
-            textBox2.TabIndex = 18;
+            textBox_Meslek.Location = new Point(13, 316);
+            textBox_Meslek.Name = "textBox_Meslek";
+            textBox_Meslek.Size = new Size(273, 23);
+            textBox_Meslek.TabIndex = 18;
             // 
-            // textBox1
+            // textBox_Sehir
             // 
-            textBox1.Location = new Point(13, 259);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(273, 23);
-            textBox1.TabIndex = 17;
+            textBox_Sehir.Location = new Point(13, 259);
+            textBox_Sehir.Name = "textBox_Sehir";
+            textBox_Sehir.Size = new Size(273, 23);
+            textBox_Sehir.TabIndex = 17;
             // 
             // label10
             // 
@@ -228,13 +228,13 @@
             label5.Size = new Size(275, 1);
             label5.TabIndex = 10;
             // 
-            // numericUpDown2
+            // numericUpDown_Boy
             // 
-            numericUpDown2.Location = new Point(13, 201);
-            numericUpDown2.Maximum = new decimal(new int[] { 250, 0, 0, 0 });
-            numericUpDown2.Name = "numericUpDown2";
-            numericUpDown2.Size = new Size(273, 23);
-            numericUpDown2.TabIndex = 9;
+            numericUpDown_Boy.Location = new Point(13, 201);
+            numericUpDown_Boy.Maximum = new decimal(new int[] { 250, 0, 0, 0 });
+            numericUpDown_Boy.Name = "numericUpDown_Boy";
+            numericUpDown_Boy.Size = new Size(273, 23);
+            numericUpDown_Boy.TabIndex = 9;
             // 
             // label4
             // 
@@ -246,13 +246,13 @@
             label4.TabIndex = 8;
             label4.Text = "Boy";
             // 
-            // numericUpDown1
+            // numericUpDown_Kilo
             // 
-            numericUpDown1.Location = new Point(13, 144);
-            numericUpDown1.Maximum = new decimal(new int[] { 250, 0, 0, 0 });
-            numericUpDown1.Name = "numericUpDown1";
-            numericUpDown1.Size = new Size(274, 23);
-            numericUpDown1.TabIndex = 7;
+            numericUpDown_Kilo.Location = new Point(13, 144);
+            numericUpDown_Kilo.Maximum = new decimal(new int[] { 250, 0, 0, 0 });
+            numericUpDown_Kilo.Name = "numericUpDown_Kilo";
+            numericUpDown_Kilo.Size = new Size(274, 23);
+            numericUpDown_Kilo.TabIndex = 7;
             // 
             // label3
             // 
@@ -274,19 +274,19 @@
             Controls.Add(bunifuCards1);
             Name = "UygulamaAcilis";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "UygulamaAcilis";
+            Text = "AnketKullanıcıDetay";
             bunifuCards1.ResumeLayout(false);
             bunifuCards1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown_Boy).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown_Kilo).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
         private Label label1;
-        private DateTimePicker dateTimePicker1;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
+        private DateTimePicker dateTimePicker_DogumTarihi;
+        private RadioButton radioButton_Erkek;
+        private RadioButton radioButton_Kadın;
         private Label label2;
         private Bunifu.Framework.UI.BunifuCards bunifuCards1;
         private Label label9;
@@ -294,13 +294,13 @@
         private Label label7;
         private Label label6;
         private Label label5;
-        private NumericUpDown numericUpDown2;
+        private NumericUpDown numericUpDown_Boy;
         private Label label4;
-        private NumericUpDown numericUpDown1;
+        private NumericUpDown numericUpDown_Kilo;
         private Label label3;
-        private Button button1;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private Button button_DevamEt;
+        private TextBox textBox_Meslek;
+        private TextBox textBox_Sehir;
         private Label label10;
         private Label label11;
     }

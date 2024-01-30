@@ -63,9 +63,19 @@ namespace Di_Base.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap acilisiFoto {
+        internal static System.Drawing.Bitmap Adsız_tasarım__3_ {
             get {
-                object obj = ResourceManager.GetObject("acilisiFoto", resourceCulture);
+                object obj = ResourceManager.GetObject("Adsız tasarım (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fit_App {
+            get {
+                object obj = ResourceManager.GetObject("Fit App", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

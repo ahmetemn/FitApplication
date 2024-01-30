@@ -34,7 +34,7 @@ namespace Di_Station.DATA.Concrete
 
             set
             {
-                _height = value/100; 
+                _height = value; 
             }
         }
         public string City { get; set; }
