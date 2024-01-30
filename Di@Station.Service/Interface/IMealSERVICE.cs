@@ -5,12 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Di_Station.REPO.Intefaces
+namespace Di_Station.Service.Interface
 {
-	public interface IUserDetailREPO :IBaseDietREPO<UserDetail>
-	{
-
-		int EmailToId(); 
-
-	}
+    public  interface IMealSERVICE:IBaseDietService<Meal>
+    {
+    }
 }

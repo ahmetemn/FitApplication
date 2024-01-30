@@ -5,10 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Di_Station.REPO.Intefaces
+namespace Di_Station.Service.Interface
 {
-	public interface ICategoryREPO :IBaseDietREPO<Category>
-	{
-     
+    public  interface IUserDetailSERVICE :IBaseDietService<UserDetail>
+    {
+
+        int MaileGoreIdGonder(); 
     }
 }

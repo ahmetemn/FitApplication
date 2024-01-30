@@ -12,5 +12,7 @@ namespace Di_Station.Service.Interface
 
         List<User> getSurnameByUserId(int id); 
 
+        
+
     }
 }

@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Di_Station.REPO.ConcreteREPO
 {
-    public class UserREPO : BaseDietREPO<User>, IUserREPO
+    public class UserDetailREPO : BaseDietREPO<UserDetail>, IUserDetailREPO
     {
-        public List<User> GetSurnameUser(int id)
+        public int EmailToId()
         {
             throw new NotImplementedException();
         }

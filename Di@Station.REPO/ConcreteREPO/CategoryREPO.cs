@@ -10,8 +10,8 @@ using System.Threading.Tasks;
 
 namespace Di_Station.REPO.ConcreteREPO
 {
-	public class CategoryREPO : BaseDietREPO<Category>, ICategoryREPO
-	{
-		
-	}
+    public class CategoryREPO : BaseDietREPO<Category>, ICategoryREPO
+    {
+     
+    }
 }

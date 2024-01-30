@@ -42,7 +42,7 @@ namespace dneme
 
                 IUserSERVICE  userSERVICE = new UserSERVICE();
 
-            userSERVICE.getSurnameByUserId(1); 
+            userSERVICE.; 
 
         }
     }

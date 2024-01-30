@@ -12,19 +12,24 @@ namespace Di_Station.Service.Concrate
 {
     public class UserSERVICE : BaseDietService<User>, IUserSERVICE
     {
-        private UserREPO _userREPO;
+        private IUserREPO _userREPO;
 
+
+        private CategoryREPO _categoryREPO; 
         public UserSERVICE()
         {
-                _userREPO = new UserREPO(); 
+                _userREPO = new UserREPO();
+               
         }
       
         //operasyon 
         public List<User> getSurnameByUserId(int id)
         {
+            
             if (id  > 0  )
             {
                 return _userREPO.GetSurnameUser(id); 
+
             }
             else
             {
