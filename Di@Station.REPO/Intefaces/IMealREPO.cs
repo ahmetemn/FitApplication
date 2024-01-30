@@ -10,5 +10,7 @@ namespace Di_Station.REPO.Intefaces
 	public interface IMealREPO :IBaseDietREPO<Meal>
 	{
 		List<Meal> GetAllOrderByName();
+
+
 	}
 }

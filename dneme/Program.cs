@@ -1,5 +1,9 @@
 ﻿using Di_Station.DATA.Concrete;
+using Di_Station.REPO.ConcreteREPO;
 using Di_Station.REPO.Context;
+using Di_Station.REPO.Intefaces;
+using Di_Station.Service.Concrate;
+using Di_Station.Service.Interface;
 
 namespace dneme
 {
@@ -33,9 +37,12 @@ namespace dneme
           
                 _db.SaveChanges();
 
-            }   
+            }
 
-        
+
+                IUserSERVICE  userSERVICE = new UserSERVICE();
+
+            userSERVICE.getSurnameByUserId(1); 
 
         }
     }
