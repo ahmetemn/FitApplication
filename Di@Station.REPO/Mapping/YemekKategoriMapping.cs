@@ -16,8 +16,14 @@ namespace Di_Station.REPO.Mapping
 
             builder.ToTable("YemekKategori");
 
-            builder.HasKey(x => new { x.KategoriId, x.YemekCesidi_Id }); 
+           
+            builder.HasKey(x => new { x.ID, x.KategoriId, x.YemekCesidi_Id });
 
+            builder.Property(x => x.ID)
+                .HasColumnOrder(1)
+                .HasColumnName("Id")
+                .IsRequired()
+                .HasColumnType("integer");
 
             builder.HasOne(x=>x.Category)
                 .WithMany(x=>x.YemekKategoris)
@@ -32,6 +38,18 @@ namespace Di_Station.REPO.Mapping
                   .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasIndex(x => x.YemekCesidi_Id).IsUnique();
+
+
+            builder.Property(x => x.Status)
+               .HasColumnName("Status")
+               .IsRequired()  //boş geçilemez 
+               .HasMaxLength(20)
+               .HasColumnType("nvarchar");
+
+
+
+
+
         }
     }
 }

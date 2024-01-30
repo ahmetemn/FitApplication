@@ -9,5 +9,6 @@ namespace Di_Station.REPO.Intefaces
 {
 	public interface IUserREPO:IBaseDietREPO<User>
 	{
-	}
+        List<User> GetSurnameUser(int id);
+    }
 }

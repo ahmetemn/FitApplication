@@ -15,7 +15,7 @@ namespace Di_Station.REPO.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
 
-            optionsBuilder.UseSqlServer("Server=DESKTOP-IOSCEH9\\MSSQLSERVER2022;Database=DbKalori;Trusted_Connection=True;TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer(@"Server=LAPTOP-12QQ6NC6\AHMET;Database=KD-19-FitApp;Trusted_Connection=True;MultipleActiveResultSets=false;TrustServerCertificate=True;");
         }
 
         public DbSet<Category> Categories { get; set; }

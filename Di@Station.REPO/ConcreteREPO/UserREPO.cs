@@ -8,7 +8,11 @@ using System.Threading.Tasks;
 
 namespace Di_Station.REPO.ConcreteREPO
 {
-	public class UserREPO :BaseDietREPO<User>,IUserREPO
-	{
-	}
+    public class UserREPO : BaseDietREPO<User>, IUserREPO
+    {
+        public List<User> GetSurnameUser(int id)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

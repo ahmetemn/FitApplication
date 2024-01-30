@@ -9,5 +9,8 @@ namespace Di_Station.REPO.Intefaces
 {
 	public interface IUserDetailREPO :IBaseDietREPO<UserDetail>
 	{
+
+		int EmailToId(); 
+
 	}
 }

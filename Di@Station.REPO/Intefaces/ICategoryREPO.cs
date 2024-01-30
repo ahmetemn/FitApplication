@@ -9,6 +9,6 @@ namespace Di_Station.REPO.Intefaces
 {
 	public interface ICategoryREPO :IBaseDietREPO<Category>
 	{
-
-	}
+     
+    }
 }

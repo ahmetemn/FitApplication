@@ -27,7 +27,18 @@ namespace Di_Station.REPO.Mapping
             builder.HasOne(x=>x.Product)
                 .WithMany(x=>x.YemekCesidiUruns)
                 .HasForeignKey(x=>x.ProductId)
-                .OnDelete(DeleteBehavior.Restrict); 
+                .OnDelete(DeleteBehavior.Restrict);
+
+
+            builder.Property(x => x.Status)
+               .HasColumnName("Status")
+               .IsRequired()  //boş geçilemez 
+               .HasMaxLength(20)
+               .HasColumnType("nvarchar");
+
+
+
+
         }
     }
 }

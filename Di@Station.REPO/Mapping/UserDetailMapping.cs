@@ -67,6 +67,17 @@ namespace Di_Station.REPO.Mapping
              .HasColumnType("nvarchar"); //daha geniş vezaman tari
 
 
+
+
+            builder.Property(x => x.Status)
+               .HasColumnName("Status")
+               .IsRequired()  //boş geçilemez 
+               .HasMaxLength(20)
+               .HasColumnType("nvarchar");
+
+
+
+
         }
     }
 }

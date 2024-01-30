@@ -11,8 +11,8 @@ namespace Di_Station.DATA.Abstract
 	{
         public int ID { get; set; }
 		public DateTime CreatedDate { get; set; } = DateTime.Now;
-		public DateTime UpdatedDate { get; set; } 
-		public DateTime DeletedDate { get; set; }
+		public DateTime UpdatedDate { get; set; }
+		public DateTime? DeletedDate { get; set; } = null;  
 
 		public Status Status { get; set; } = Status.Added;
 

@@ -39,8 +39,19 @@ namespace Di_Station.REPO.Mapping
             builder.HasOne(x=>x.Meal)
                 .WithMany(x=>x.YemekCesidiPorsiyonOguns)
                 .HasForeignKey(x=>x.OgunId)
-                .OnDelete(DeleteBehavior.Restrict); 
-        
+                .OnDelete(DeleteBehavior.Restrict);
+
+
+
+            builder.Property(x => x.Status)
+               .HasColumnName("Status")
+               .IsRequired()  //boş geçilemez 
+               .HasMaxLength(20)
+               .HasColumnType("nvarchar");
+
+
+
+
         }
     }
 }

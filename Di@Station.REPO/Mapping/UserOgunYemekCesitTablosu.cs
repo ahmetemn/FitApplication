@@ -31,6 +31,16 @@ namespace Di_Station.REPO.Mapping
                 .OnDelete(DeleteBehavior.Restrict);
 
 
+            builder.Property(x => x.Status)
+               .HasColumnName("Status")
+               .IsRequired()  //boş geçilemez 
+               .HasMaxLength(20)
+               .HasColumnType("nvarchar");
+
+
+
+
+
         }
     }
 }
