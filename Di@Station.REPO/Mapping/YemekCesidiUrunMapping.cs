@@ -27,7 +27,10 @@ namespace Di_Station.REPO.Mapping
             builder.HasOne(x=>x.Product)
                 .WithMany(x=>x.YemekCesidiUruns)
                 .HasForeignKey(x=>x.ProductId)
-                .OnDelete(DeleteBehavior.Restrict); 
+                .OnDelete(DeleteBehavior.Restrict);
+
+
+        
         }
     }
 }

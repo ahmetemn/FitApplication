@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Di@Station.REPO", "Di@Stati
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dneme", "dneme\dneme.csproj", "{F2CCD5FC-AFCD-47E0-A278-2C3340ED71DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Di@Station.SERVICE", "Di@Station.Service\Di@Station.SERVICE.csproj", "{A2F420E5-71F4-4279-A78E-04EBDD42DA6C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Di@Station.SERVICE", "Di@Station.Service\Di@Station.SERVICE.csproj", "{A2F420E5-71F4-4279-A78E-04EBDD42DA6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Di@Base.UI", "Di@Base.UI\Di@Base.UI.csproj", "{B0502814-B2B3-45F8-B7A5-7DC9C1BD7CAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{A2F420E5-71F4-4279-A78E-04EBDD42DA6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2F420E5-71F4-4279-A78E-04EBDD42DA6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2F420E5-71F4-4279-A78E-04EBDD42DA6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0502814-B2B3-45F8-B7A5-7DC9C1BD7CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0502814-B2B3-45F8-B7A5-7DC9C1BD7CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0502814-B2B3-45F8-B7A5-7DC9C1BD7CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0502814-B2B3-45F8-B7A5-7DC9C1BD7CAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

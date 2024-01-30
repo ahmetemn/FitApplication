@@ -27,8 +27,11 @@ namespace Di_Station.REPO.Mapping
                 .HasColumnName("KategoriAdi")
                 .IsRequired()  //boş geçilemez 
                 .HasMaxLength(50)
-                .HasColumnType("nvarchar"); 
+                .HasColumnType("nvarchar");
 
+
+
+        
 
         }
     }

@@ -16,7 +16,12 @@ namespace Di_Station.REPO.Mapping
 
             builder.ToTable("YemekKategori");
 
-            builder.HasKey(x => new { x.KategoriId, x.YemekCesidi_Id }); 
+            builder.Property(x => x.ID)
+                .IsRequired()
+                .HasColumnName("ID")
+                .HasColumnOrder(1)
+                .HasColumnType("integer");
+            builder.HasKey(x => new {  x.KategoriId, x.YemekCesidi_Id }); 
 
 
             builder.HasOne(x=>x.Category)
@@ -32,6 +37,10 @@ namespace Di_Station.REPO.Mapping
                   .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasIndex(x => x.YemekCesidi_Id).IsUnique();
+
+
+        
+
         }
     }
 }

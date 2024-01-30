@@ -29,7 +29,9 @@ namespace Di_Station.REPO.Mapping
                 .IsRequired()
                 .HasColumnName("PorsiyonOlcegi")
                 .HasColumnType("decimal(18,2)");
-                
+
+
+
         }
     }
 }

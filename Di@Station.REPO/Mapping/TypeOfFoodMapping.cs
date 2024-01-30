@@ -43,6 +43,8 @@ namespace Di_Station.REPO.Mapping
                        .HasColumnName("Fiyat")
                        .IsRequired();
 
+
+
         }
     }
 }

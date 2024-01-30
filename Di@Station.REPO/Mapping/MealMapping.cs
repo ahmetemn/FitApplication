@@ -28,6 +28,7 @@ namespace Di_Station.REPO.Mapping
                  .HasMaxLength(50)
                  .IsRequired();
 
+          
 
 
         }

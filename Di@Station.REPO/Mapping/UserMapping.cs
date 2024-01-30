@@ -65,7 +65,11 @@ namespace Di_Station.REPO.Mapping
             builder.HasOne(x=>x.UserDetail)
                 .WithOne(u=>u.User)
                 .HasForeignKey<User>(d=>d.UserDetailId)
-                .OnDelete(DeleteBehavior.Restrict); 
+                .OnDelete(DeleteBehavior.Restrict);
+
+
+       
+
 
         }
     }

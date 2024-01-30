@@ -66,6 +66,9 @@ namespace Di_Station.REPO.Mapping
              .HasMaxLength(60)
              .HasColumnType("nvarchar"); //daha geniş vezaman tari
 
+         
+
+
 
         }
     }
