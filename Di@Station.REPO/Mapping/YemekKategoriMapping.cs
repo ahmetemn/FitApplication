@@ -16,11 +16,7 @@ namespace Di_Station.REPO.Mapping
 
             builder.ToTable("YemekKategori");
 
-            builder.Property(x => x.ID)
-                .IsRequired()
-                .HasColumnName("ID")
-                .HasColumnOrder(1)
-                .HasColumnType("integer");
+           
             builder.HasKey(x => new {  x.KategoriId, x.YemekCesidi_Id }); 
 
 
