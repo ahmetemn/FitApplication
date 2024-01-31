@@ -4,6 +4,7 @@ using Di_Station.REPO.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Di_Station.REPO.Migrations
 {
     [DbContext(typeof(DietContext))]
-    partial class DietContextModelSnapshot : ModelSnapshot
+    [Migration("20240131095705_UserRoles")]
+    partial class UserRoles
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -515,7 +517,7 @@ namespace Di_Station.REPO.Migrations
                     b.HasOne("Di_Station.DATA.Concrete.UserDetail", "UserDetail")
                         .WithOne("User")
                         .HasForeignKey("Di_Station.DATA.Concrete.User", "UserDetailId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("UserDetail");

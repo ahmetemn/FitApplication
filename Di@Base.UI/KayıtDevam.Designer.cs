@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
-            textBox4 = new TextBox();
-            label2 = new Label();
             textBox_SoyAdı = new TextBox();
             textBox_Adı = new TextBox();
             textBox_KullaniciAdi = new TextBox();
@@ -56,8 +54,6 @@
             bunifuCards1.BottomSahddow = true;
             bunifuCards1.BottomShadow = true;
             bunifuCards1.color = Color.Tomato;
-            bunifuCards1.Controls.Add(textBox4);
-            bunifuCards1.Controls.Add(label2);
             bunifuCards1.Controls.Add(textBox_SoyAdı);
             bunifuCards1.Controls.Add(textBox_Adı);
             bunifuCards1.Controls.Add(textBox_KullaniciAdi);
@@ -81,26 +77,8 @@
             bunifuCards1.RightSahddow = true;
             bunifuCards1.RightShadow = true;
             bunifuCards1.ShadowDepth = 20;
-            bunifuCards1.Size = new Size(338, 392);
+            bunifuCards1.Size = new Size(338, 359);
             bunifuCards1.TabIndex = 7;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(19, 317);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(295, 23);
-            textBox4.TabIndex = 25;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.ForeColor = Color.Red;
-            label2.Location = new Point(20, 302);
-            label2.Name = "label2";
-            label2.Size = new Size(178, 15);
-            label2.TabIndex = 24;
-            label2.Text = "Mailinize Gelen Güvenlik Kodu ? ";
             // 
             // textBox_SoyAdı
             // 
@@ -137,7 +115,7 @@
             // 
             button_KayıtOl.BackColor = Color.Green;
             button_KayıtOl.ForeColor = Color.White;
-            button_KayıtOl.Location = new Point(13, 351);
+            button_KayıtOl.Location = new Point(16, 308);
             button_KayıtOl.Name = "button_KayıtOl";
             button_KayıtOl.Size = new Size(301, 27);
             button_KayıtOl.TabIndex = 19;
@@ -237,7 +215,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Fit_App;
-            ClientSize = new Size(517, 659);
+            ClientSize = new Size(517, 627);
             Controls.Add(bunifuCards1);
             Name = "KayıtDevam";
             StartPosition = FormStartPosition.CenterScreen;
@@ -265,7 +243,5 @@
         private Label label1;
         private TextBox textBox_Adı;
         private TextBox textBox_SoyAdı;
-        private TextBox textBox4;
-        private Label label2;
     }
 }

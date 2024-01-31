@@ -36,8 +36,7 @@ namespace Di_Base.UI
               dateTimePicker_DogumTarihi.Value.Month,
               dateTimePicker_DogumTarihi.Value.Day
               );
-
-            var result = _userDetailService.Create(new UserDetail
+              UserDetail userDetail =  new UserDetail
             {
 
                 Gender = radioButton_Erkek.Checked ? true : false,
@@ -46,17 +45,17 @@ namespace Di_Base.UI
                 Height = (double)numericUpDown_Boy.Value,
                 City = textBox_Sehir.Text,
                 Job = textBox_Meslek.Text,
+                
 
+            };
 
-            });
-         
+            _userDetailService.Create(userDetail); 
 
-
-
-
-
-            KayıtDevam kayıtDevam = new KayıtDevam(); 
+            KayıtDevam kayıtDevam = new KayıtDevam(userDetail); 
             kayıtDevam.ShowDialog();
+
+            this.Close();
+
         }
     }
 }

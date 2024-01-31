@@ -65,10 +65,14 @@ namespace Di_Station.REPO.Mapping
             builder.HasOne(x=>x.UserDetail)
                 .WithOne(u=>u.User)
                 .HasForeignKey<User>(d=>d.UserDetailId)
-                .OnDelete(DeleteBehavior.Restrict);
+                .OnDelete(DeleteBehavior.Cascade);
 
 
-
+            builder.Property(x => x.Roles)
+                .IsRequired()
+                .HasColumnName("Roles")
+                .HasColumnType("nvarchar")
+                .HasMaxLength(5);
 
             builder.Property(x => x.Status)
                .HasColumnName("Status")
